@@ -372,9 +372,9 @@ h6,
 }
 
 /* For mobile devices - Hide the dropdown by default and show when active */
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .navbar .nav-item.dropdown .dropdown-menu {
-        display: none; /* Hide the dropdown by default */
+        display: none;
         opacity: 0;
         visibility: hidden;
     }
@@ -384,7 +384,7 @@ h6,
         opacity: 1;
         visibility: visible;
     }
-}
+} */
 
 /* Ensure no horizontal scroll */
 body, html {

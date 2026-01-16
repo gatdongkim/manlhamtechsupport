@@ -550,19 +550,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   .team-item img {
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-    object-fit: contain;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 150px;           /* fixed width */
+    height: 150px;          /* fixed height */
+    object-fit: cover;      /* fill circle nicely */
+    border-radius: 50%;     /* perfect circle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
     cursor: pointer;
-    margin-bottom: 15px;
-  }
+    margin: 0 auto 15px auto; /* center horizontally */
+    display: block;
+}
 
-  .team-item img:hover {
-    transform: scale(1.05);
-  }
+/* Hover effect */
+.team-item img:hover {
+    transform: scale(1.1);  /* gently enlarge */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    .team-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 576px) {
+    .team-item img {
+        width: 100px;
+        height: 100px;
+    }
+}
 
   .team-info {
     font-size: 14px;
@@ -637,13 +655,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="team-info">
             <h5>Gatdong Kim</h5>
             <p>Founder, CEO</p>
-            <p>Email: <a href="mailto:mts.manlham@gmail.com">mts.manlham@gmail.com</a></p>
+            <p>Email: <a href="mailto:kgatdong@gmail.com">kgatdong@gmail.com</a></p>
             <p>Tel: <a href="tel:+211929267673">(211) 929-267673</a></p>
           </div>
           <div class="team-social">
             <a href="https://linkedin.com/in/gatdong.kim" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:mts.manlham@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://facebook.com/gatdongkim" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:kgatdong@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://facebook.com/gkwal.kim" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
         </div>
       </div>

@@ -528,15 +528,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
 
-  .team-item img {
-    width: 150px;           /* fixed width */
-    height: 150px;          /* fixed height */
-    object-fit: cover;      /* fill circle nicely */
-    border-radius: 50%;     /* perfect circle */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
-    cursor: pointer;
-    margin: 0 auto 15px auto; /* center horizontally */
-    display: block;
+  /* Team Member Image Styling */
+.team-item img, 
+.card-body img,
+#team .rounded-circle {
+    width: 150px !important;    /* Force a specific width */
+    height: 150px !important;   /* Force a specific height */
+    object-fit: cover !important; /* This is the "magic" line - it crops the image to fill the circle */
+    object-position: center;    /* Keeps the face centered while cropping */
+    border-radius: 50%;         /* Ensures it stays a circle */
+    border: 5px solid #fff;     /* Optional: adds a clean white border around the circle */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Hover effect */

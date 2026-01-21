@@ -541,3 +541,62 @@ img.pulse {
     object-fit: cover !important;
     border-radius: 50% !important;
 }
+
+/* --- Footer Overhaul: Success Stories & Impact Stats --- */
+
+/* Impact Stats styling (Top of Footer) */
+.footer h3.text-primary {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.footer .border-bottom {
+    border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Success Stories styling */
+.testimonial-item-footer p {
+    line-height: 1.5;
+    color: var(--secondary);
+    margin-bottom: 5px;
+}
+
+.testimonial-item-footer h6 {
+    font-weight: 600;
+}
+
+/* Newsletter Success Message styling */
+#successMessage {
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(25, 135, 84, 0.1);
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Ensure footer links don't have underlines unless hovered */
+.footer .btn-link {
+    text-decoration: none;
+}
+
+.footer .btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Social Icon hover adjustment */
+.footer .btn-square.rounded-circle:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* Responsive adjustments for the Impact Stats bar */
+@media (max-width: 576px) {
+    .footer h3.text-primary {
+        font-size: 1.8rem;
+    }
+    .footer .col-6 {
+        margin-bottom: 20px;
+    }
+}

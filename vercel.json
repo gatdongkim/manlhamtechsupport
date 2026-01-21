@@ -1,23 +1,4 @@
 {
-  "rewrites": [
-     { "source": "/", "destination": "/index.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/courses", "destination": "/courses.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/fullstack", "destination": "/fullstack.html" },
-    { "source": "/database", "destination": "/database.html" },
-    { "source": "/webdev", "destination": "/webdev.html" },
-    { "source": "/graphicdesign", "destination": "/graphicdesign.html" },
-    { "source": "/uiux", "destination": "/uiux.html" },
-    { "source": "/cloud", "destination": "/cloud.html" },
-    { "source": "/devops", "destination": "/devops.html" },
-    { "source": "/cybersecurity", "destination": "/cybersecurity.html" },
-    { "source": "/compliance", "destination": "/compliance.html" },
-    { "source": "/itconsulting", "destination": "/itconsulting.html" },
-    { "source": "/training", "destination": "/training.html" },
-    { "source": "/digitalmarket", "destination": "/digitalmarket.html" },
-    { "source": "/content", "destination": "/content.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
-

@@ -502,3 +502,42 @@ body, html {
     width: 20px;
     text-align: center;
 }
+
+/* --- Manlham Tech Support Custom Fixes --- */
+
+/* 1. Fix: Remove blue border/outline during animations (like pulse) */
+.animated, 
+.animated:focus, 
+.animated:active,
+img.animated,
+img.pulse {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 2. Fix: Center Team Member Content Horizontally */
+.team-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    text-align: center !important;
+}
+
+/* 3. Fix: Push Team Info text to the bottom of the card */
+.team-info {
+    margin-top: auto !important;
+    width: 100%;
+}
+
+/* 4. Ensure Team images are perfectly circular and centered */
+.team-item img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}

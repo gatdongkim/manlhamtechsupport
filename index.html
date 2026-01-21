@@ -514,6 +514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .team-item {
     display: flex;
     flex-direction: column;
+    align-items: center;    /* FIX: Centers images and text horizontally */
     text-align: center;
     background: #fff;
     padding: 15px;
@@ -529,42 +530,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   /* Team Member Image Styling */
-.team-item img, 
-.card-body img,
-#team .rounded-circle {
-    width: 150px !important;    /* Force a specific width */
-    height: 150px !important;   /* Force a specific height */
-    object-fit: cover !important; /* This is the "magic" line - it crops the image to fill the circle */
-    object-position: center;    /* Keeps the face centered while cropping */
-    border-radius: 50%;         /* Ensures it stays a circle */
-    border: 5px solid #fff;     /* Optional: adds a clean white border around the circle */
+  .team-item img, 
+  .card-body img,
+  #team .rounded-circle {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    margin-bottom: 15px;    /* Adds spacing below the centered image */
+  }
 
-/* Hover effect */
-.team-item img:hover {
-    transform: scale(1.1);  /* gently enlarge */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
-}
+  /* Hover effect */
+  .team-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
 
-/* Responsive for tablets */
-@media (max-width: 768px) {
+  /* Responsive for tablets */
+  @media (max-width: 768px) {
     .team-item img {
-        width: 120px;
-        height: 120px;
+      width: 120px !important;
+      height: 120px !important;
     }
-}
+  }
 
-/* Responsive for mobile */
-@media (max-width: 576px) {
+  /* Responsive for mobile */
+  @media (max-width: 576px) {
     .team-item img {
-        width: 100px;
-        height: 100px;
+      width: 100px !important;
+      height: 100px !important;
     }
-}
+  }
 
   .team-info {
+    margin-top: auto;      /* FIX: Pushes text/info to the bottom of the card */
     font-size: 14px;
+    width: 100%;
   }
 
   .team-info p {
@@ -602,18 +606,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     background: #00bcd4;
     color: #fff;
     transform: scale(1.15);
-  }
-
-  @media (max-width: 768px) {
-    .team-item img {
-      max-height: 200px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .team-item img {
-      max-height: 150px;
-    }
   }
 </style>
 
